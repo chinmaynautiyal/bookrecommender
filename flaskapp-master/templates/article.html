@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>{{book[2]}}</h1>
+  <small>Written by {{book[3]}}</small>
+  <hr>
+
+  <img src = {{ book[8] }}>
+  
+  <div>
+    <ul class="list-group">
+    
+      <li class = "list-group-item"> ISBN : {{ book[1] }}</li> 
+      <li class = "list-group-item"> Year of Publishing : {{ book[4] }}</li> 
+      <li class = "list-group-item"> Publisher : {{ book[5] }}</li>
+    </ul>   
+
+   
+
+
+   </div>
+   
+  
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+
+
+{% block body %}
+  <h1>All Books</h1>
+  <ul class="list-group">
+    
+    <! -- insert book items here instead of articles, and make them lead to their individual page -->
+
+
+    
+    {% for book in books1682.itertuples()%}
+      
+      <li class = "list-group-item"> <a href="books/{{book[9]}}">{{ book[2] }}</a> </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
